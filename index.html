@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHREYASH SHIVGAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="particles"></div>
+    <div class="geometric-bg">
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-glass">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="logo-text">
+                    <span class="text-2xl font-bold gradient-text">Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-amber-800 hover:text-amber-600 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu-hidden">
+            <div class="px-6 py-4 space-y-4 bg-white/20 backdrop-blur-lg">
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#skills" class="block nav-link">Skills</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="hero-content">
+                <div class="mb-8">
+                    <div class="profile-avatar mx-auto mb-6">
+                        <i class="fas fa-user text-4xl text-white"></i>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black mb-6 gradient-text-hero">
+                        SHREYASH SHIVGAN
+                    </h1>
+                    <div class="typing-container mb-8">
+                        <p class="text-xl md:text-2xl text-amber-800/80 font-medium">
+                            Software Engineer • <span id="typing-text" class="gradient-text"></span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="glass-card max-w-3xl mx-auto p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">About Me</h2>
+                    <p class="text-lg text-amber-900/80 leading-relaxed">
+                        I'm a passionate recent Software Engineering graduate with a strong focus on 
+                        <span class="font-semibold text-amber-800">backend and full-stack development</span>. 
+                        I love creating efficient, scalable solutions and am always eager to learn new technologies. 
+                        My goal is to contribute to innovative projects that make a real impact.
+                    </p>
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="#skills" class="cta-button">
+                        <span>Explore My Skills</span>
+                        <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+          
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="text-xl text-amber-800/70 mt-4">Technologies I work with</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-800">Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-800">Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-800">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category fade-in lg:col-span-3 lg:max-w-md lg:mx-auto">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-800">Tools & Testing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Vercel/Netlify</span>
+                        <span class="skill-tag">ChatGpt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Social Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="section-title mb-8">Let's Connect</h2>
+            <p class="text-xl text-amber-800/70 mb-12">
+                Ready to collaborate or discuss opportunities? Let's connect through any of these platforms!
+            </p>
+
+            <!-- Social Buttons -->
+            <div class="social-buttons">
+                <a href="https://linkedin.com/in/shreyashshivgan" target="_blank" rel="noopener noreferrer" 
+                   class="social-button linkedin-button group">
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/ShreyashShivgan" target="_blank" rel="noopener noreferrer" 
+                   class="social-button github-button group">
+                    <div class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="mailto:shreyashshivganwork@gmail.com" 
+                   class="social-button email-button group">
+                    <div class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://wa.me/9920359130?text=Hi%20there!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="social-button whatsapp-button group">
+                    <div class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+
+            <div class="glass-card p-8">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Get In Touch</h3>
+                <p class="text-amber-900/80 mb-4">
+                    I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-amber-800/70">
+                    <div class="flex items-center">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Usually responds within 24 hours</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe mr-2"></i>
+                        <span>Available worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-amber-200/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-amber-800/60 mb-4">
+                Crafted with passion and code.
+            <!--</p>
+            <div class="flex justify-center space-x-6 text-amber-800/50">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-amber-600 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="hover:text-amber-600 transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="hover:text-amber-600 transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="hover:text-amber-600 transition-colors">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+            </div> ---->
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
