@@ -43,7 +43,7 @@ function initTypingAnimation() {
     const typingElement = document.getElementById("typing-text");
     if (!typingElement) return;
 
-    const texts = ["Backend Developer", "Full-Stack Developer", "Problem Solver", "Tech Enthusiast"];
+    const texts = ["Backend Developer", "Frontend Developer", "Problem Solver", "Tech Enthusiast"];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
